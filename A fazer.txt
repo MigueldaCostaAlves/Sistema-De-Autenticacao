@@ -68,3 +68,11 @@ Base de dados
 Ligação ao frontend
       ↓
 Testes de autenticação
+
+
+
+IDEIAS ORGANIZADAS:
+
+Modelo de Ameacas - para identificar ameaças (onde, quem, e o quê) e as medidas de segurança
+Decisoes de Arquitetura - para definir as tecnologias, estrutura do backend, sessões, erros, configurações
+Modelo de Dados - para definir as tabelas, os seus campos, estados, tokens, sesões, regras de utilizadores
