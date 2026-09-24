@@ -3,91 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pré-visualização de uma plataforma reutilizável de identidade" />
     <title>Sentinel Identity</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=theme-1" />
   </head>
   <body>
     <div class="app-shell">
       <header class="topbar">
-        <a class="brand" href="#inicio" data-view="inicio" aria-label="Sentinel Identity, início">
-          <span class="brand-mark"><span></span><span></span><span></span></span>
-          <span>sentinel<span class="brand-dot">.</span></span>
-        </a>
-        <div class="topbar-meta">
-          <span class="status-dot"></span>
-          <span>ambiente de demonstração</span>
-        </div>
-        <button class="icon-button mobile-menu" id="menu-toggle" type="button" aria-label="Abrir menu">☰</button>
-        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
-          <a href="#inicio" data-view="inicio">Visão geral</a>
-          <a href="#seguranca" data-view="seguranca">Segurança</a>
-          <a href="#sessoes" data-view="sessoes">Sessões</a>
-          <button class="button button-small button-outline" data-action="open-login" type="button">Entrar</button>
-        </nav>
+        <a class="brand" href="#inicio" data-view="inicio" aria-label="Sentinel Identity, início"><span class="brand-mark"><i></i><i></i><i></i></span><span>sentinel<span class="brand-dot">.</span></span></a>
+        <div class="topbar-meta"><span class="status-dot"></span><span>ambiente de demonstração</span></div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar dark mode"><span class="theme-toggle-icon">☾</span><span id="theme-toggle-label">Dark mode</span></button>
+        <button class="mobile-menu" id="menu-toggle" type="button" aria-label="Abrir menu">☰</button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="#inicio" data-view="inicio">Visão geral</a><a href="#seguranca" data-view="seguranca">Segurança</a><a href="#sessoes" data-view="sessoes">Sessões</a><button class="button button-outline" data-action="open-login" type="button">Entrar</button></nav>
       </header>
-
       <main>
-        <section class="view active" id="view-inicio" aria-labelledby="home-title">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <p class="eyebrow"><span class="eyebrow-line"></span> identidade para produtos que crescem</p>
-              <h1 id="home-title">Acesso simples.<br /><em>Controlo absoluto.</em></h1>
-              <p class="hero-text">Uma fundação de identidade reutilizável para autenticar pessoas, dispositivos e serviços com clareza.</p>
-              <div class="hero-actions">
-                <button class="button button-primary" data-action="open-register" type="button">Criar conta <span>↗</span></button>
-                <button class="text-button" data-action="open-login" type="button">Já tenho uma conta <span>→</span></button>
-              </div>
-              <div class="trust-row"><span class="trust-icon">✦</span><span>Fluxos prontos para ligar à tua API</span></div>
-            </div>
-            <div class="hero-visual" aria-label="Pré-visualização do painel de segurança">
-              <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
-              <div class="security-card">
-                <div class="card-topline"><span>AUTH / OVERVIEW</span><span class="live-label"><i></i> LIVE</span></div>
-                <div class="shield-icon"><span>✓</span></div>
-                <p class="card-kicker">estado da identidade</p>
-                <h2>Protegido por<br /><strong>padrão.</strong></h2>
-                <div class="mini-metrics"><div><strong>99.9%</strong><small>disponibilidade</small></div><div><strong>02</strong><small>alertas ativos</small></div></div>
-                <div class="card-footer"><span>última verificação</span><strong>agora mesmo</strong></div>
-              </div>
-              <div class="float-chip chip-device"><span class="chip-icon">⌁</span><span><small>novo dispositivo</small><strong>MacBook Pro</strong></span></div>
-              <div class="float-chip chip-secure"><span>✓</span> sessão segura</div>
-            </div>
-          </div>
-          <div class="capability-strip">
-            <span class="strip-label">construído para começar</span>
-            <div class="capability"><span class="cap-number">01</span><span><strong>Autenticação</strong><small>Login e registo</small></span></div>
-            <div class="capability"><span class="cap-number">02</span><span><strong>Proteção</strong><small>MFA e recuperação</small></span></div>
-            <div class="capability"><span class="cap-number">03</span><span><strong>Visibilidade</strong><small>Sessões e dispositivos</small></span></div>
-            <div class="capability"><span class="cap-number">04</span><span><strong>Comando</strong><small>Painel administrativo</small></span></div>
-          </div>
+        <section class="view active" id="view-inicio">
+          <div class="hero-grid"><div class="hero-copy"><p class="eyebrow"><span></span> identidade para produtos que crescem</p><h1>Acesso simples.<br /><em>Controlo absoluto.</em></h1><p class="hero-text">Uma fundação reutilizável para autenticar pessoas, dispositivos e serviços com clareza.</p><div class="hero-actions"><button class="button button-primary" data-action="open-register" type="button">Criar conta <b>↗</b></button><button class="text-button" data-action="open-login" type="button">Já tenho uma conta <b>→</b></button></div><p class="trust-line">✦ <span>Fluxos prontos para ligar à tua API</span></p></div><div class="hero-visual"><div class="halo"></div><div class="security-card"><div class="card-topline"><span>AUTH / OVERVIEW</span><span class="live"><i></i> LIVE</span></div><div class="shield">✓</div><small>ESTADO DA IDENTIDADE</small><h2>Protegido por<br /><em>padrão.</em></h2><div class="metrics"><span><b>99.9%</b><small>disponibilidade</small></span><span><b>02</b><small>alertas ativos</small></span></div><div class="card-footer"><span>última verificação</span><b>agora mesmo</b></div></div><div class="chip">✓ sessão segura</div></div></div>
+          <div class="capability-strip"><span class="strip-title">construído para começar</span><span><b>01</b><strong>Autenticação</strong><small>Login e registo</small></span><span><b>02</b><strong>Proteção</strong><small>MFA e recuperação</small></span><span><b>03</b><strong>Visibilidade</strong><small>Sessões e dispositivos</small></span><span><b>04</b><strong>Comando</strong><small>Painel administrativo</small></span></div>
         </section>
-
-        <section class="view" id="view-seguranca" aria-labelledby="security-title">
-          <div class="section-heading"><p class="eyebrow"><span class="eyebrow-line"></span> mapa do produto</p><h1 id="security-title">Segurança por<br /><em>camadas.</em></h1><p>Os blocos que vão formar o sistema completo, já organizados para crescer com o projeto.</p></div>
-          <div class="feature-grid">
-            <article class="feature-card feature-highlight"><span class="feature-index">01 / CORE</span><span class="feature-symbol">◎</span><h2>Login e registo</h2><p>A porta de entrada para cada identidade, desenhada para ser rápida e familiar.</p><button class="text-button" data-action="open-register" type="button">Experimentar fluxo <span>→</span></button></article>
-            <article class="feature-card"><span class="feature-index">02 / RECOVERY</span><span class="feature-symbol">⌁</span><h2>Recuperação</h2><p>Recuperar o acesso sem criar novos pontos de fricção.</p><span class="coming-soon">próxima fase</span></article>
-            <article class="feature-card"><span class="feature-index">03 / ACCESS</span><span class="feature-symbol">◌</span><h2>MFA e OAuth</h2><p>Mais contexto para decisões de acesso mais fortes.</p><span class="coming-soon">próxima fase</span></article>
-            <article class="feature-card"><span class="feature-index">04 / CONTROL</span><span class="feature-symbol">⌘</span><h2>Admin e sessões</h2><p>Uma visão clara de quem está ligado e do que pode fazer.</p><button class="text-button" data-view="sessoes" type="button">Ver painel <span>→</span></button></article>
-          </div>
-        </section>
-
-        <section class="view" id="view-sessoes" aria-labelledby="sessions-title">
-          <div class="section-heading compact"><p class="eyebrow"><span class="eyebrow-line"></span> painel de controlo</p><h1 id="sessions-title">As tuas <em>sessões.</em></h1><p>Nesta fase os dados são apenas exemplos locais. Nada é guardado.</p></div>
-          <div class="dashboard-panel"><div class="dashboard-head"><div><span class="panel-label">ATIVIDADE RECENTE</span><h2>Dispositivos ligados</h2></div><span class="session-count">2 ativas</span></div><div class="session-list"><div class="session-row"><span class="device-symbol">⌘</span><span><strong>Este dispositivo</strong><small>Windows · Lisboa · agora</small></span><span class="current-session">sessão atual</span></div><div class="session-row"><span class="device-symbol">▣</span><span><strong>iPhone 15 Pro</strong><small>iOS · Lisboa · há 2 dias</small></span><button class="revoke-button" data-action="revoke-session" type="button">Revogar</button></div></div><div class="panel-note"><span>i</span> A revogação será ligada ao servidor quando a API for adicionada.</div></div>
-        </section>
-
-        <section class="view auth-view" id="view-auth" aria-labelledby="auth-title">
-          <div class="auth-panel"><div class="auth-brand"><span class="brand-mark"><span></span><span></span><span></span></span><span>sentinel<span class="brand-dot">.</span></span></div><div class="auth-tabs"><button class="auth-tab active" data-auth="login" type="button">Entrar</button><button class="auth-tab" data-auth="register" type="button">Criar conta</button></div><div id="auth-form-container"></div><div class="demo-note"><span>◈</span> Modo demonstração: nenhuma informação será guardada.</div></div>
-        </section>
+        <section class="view" id="view-seguranca"><div class="section-heading"><p class="eyebrow"><span></span> mapa do produto</p><h1>Segurança por<br /><em>camadas.</em></h1><p>Os blocos que vão formar o sistema completo, organizados para crescer com o projeto.</p></div><div class="feature-grid"><article class="feature-card feature-highlight"><small>01 / CORE</small><strong>◎</strong><h2>Login e registo</h2><p>A porta de entrada para cada identidade.</p><button class="text-button" data-action="open-register" type="button">Experimentar fluxo →</button></article><article class="feature-card"><small>02 / RECOVERY</small><strong>⌁</strong><h2>Recuperação</h2><p>Recuperar o acesso sem fricção.</p><i>próxima fase</i></article><article class="feature-card"><small>03 / ACCESS</small><strong>◌</strong><h2>MFA e OAuth</h2><p>Decisões de acesso mais fortes.</p><i>próxima fase</i></article><article class="feature-card"><small>04 / CONTROL</small><strong>⌘</strong><h2>Admin e sessões</h2><p>Uma visão clara de quem está ligado.</p><button class="text-button" data-view="sessoes" type="button">Ver painel →</button></article></div></section>
+        <section class="view" id="view-sessoes"><div class="section-heading compact"><p class="eyebrow"><span></span> painel de controlo</p><h1>As tuas <em>sessões.</em></h1><p>Nesta fase os dados são apenas exemplos locais. Nada é guardado.</p></div><div class="dashboard-panel"><div class="dashboard-head"><div><small>ATIVIDADE RECENTE</small><h2>Dispositivos ligados</h2></div><b>2 ativas</b></div><div class="session-row"><span class="device-icon">⌘</span><span><strong>Este dispositivo</strong><small>Windows · Lisboa · agora</small></span><i>sessão atual</i></div><div class="session-row"><span class="device-icon">▣</span><span><strong>iPhone 15 Pro</strong><small>iOS · Lisboa · há 2 dias</small></span><button class="revoke-button" data-action="revoke-session" type="button">Revogar</button></div></div></section>
+        <section class="view auth-view" id="view-auth"><div class="auth-panel"><div class="auth-brand">sentinel<span class="brand-dot">.</span></div><div class="auth-tabs"><button class="auth-tab active" data-auth="login" type="button">Entrar</button><button class="auth-tab" data-auth="register" type="button">Criar conta</button></div><div id="auth-form-container"></div><p class="demo-note">◈ Modo demonstração: nenhuma informação será guardada.</p></div></section>
       </main>
-      <footer><span>sentinel identity / 2026</span><span>interface inicial <i></i> sem persistência</span></footer>
+      <footer><span>sentinel identity / 2026</span><span>interface inicial · sem persistência</span></footer>
     </div>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="app.js"></script>
+    <script src="app.js?v=theme-1"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@ Gestão de sessões
 Revogação de tokens
 Gestão de dispositivos
 Painel administrativo
-Podes integrá-lo nos restantes projetos e demonstrar que sabes construir autenticação corretamente, em vez de apenas usar uma biblioteca sem compreender o fluxo.
+
 
 
 COISAS MAIS ESPECIFICAS A FAZER:

@@ -78,4 +78,22 @@ document.addEventListener('click', (event) => {
 });
 
 document.querySelector('#menu-toggle').addEventListener('click', () => nav.classList.toggle('open'));
+
+const themeToggle = document.querySelector('#theme-toggle');
+const themeIcon = themeToggle.querySelector('.theme-toggle-icon');
+const themeLabel = document.querySelector('#theme-toggle-label');
+
+function updateThemeControl() {
+  const isDark = document.body.dataset.theme === 'dark';
+  themeIcon.textContent = isDark ? '☀' : '☾';
+  themeLabel.textContent = isDark ? 'Light mode' : 'Dark mode';
+  themeToggle.setAttribute('aria-label', isDark ? 'Voltar ao light mode' : 'Ativar dark mode');
+}
+
+themeToggle.addEventListener('click', () => {
+  document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+  updateThemeControl();
+});
+
+updateThemeControl();
 renderAuthForm('login');
