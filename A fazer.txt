@@ -11,3 +11,60 @@ Revogação de tokens
 Gestão de dispositivos
 Painel administrativo
 Podes integrá-lo nos restantes projetos e demonstrar que sabes construir autenticação corretamente, em vez de apenas usar uma biblioteca sem compreender o fluxo.
+
+
+COISAS MAIS ESPECIFICAS A FAZER:
+
+1. Sistema de autenticação
+
+Backend API
+
+Node.js com TypeScript.
+API REST para registo, login e recuperação de conta.
+Validação de dados recebidos.
+Base de dados
+
+Utilizadores.
+Passwords armazenadas apenas com hash seguro.
+Estados da conta e datas importantes.
+Sessões e dispositivos.
+Autenticação
+
+Registo de utilizador.
+Login e logout.
+Sessões seguras.
+Proteção contra tentativas repetidas.
+Revogação de sessões.
+Recuperação de conta
+
+Pedido de recuperação.
+Token temporário.
+Expiração e utilização única do token.
+Auditoria
+
+Registo de login bem-sucedido.
+Tentativas falhadas.
+Logout.
+Recuperação de conta.
+Alterações relevantes na conta.
+Modelo de ameaças
+
+O que estamos a proteger.
+Possíveis ataques.
+O que o sistema protege.
+Limitações conhecidas.
+Decisões de arquitetura.
+
+
+
+Modelo de dados
+      ↓
+Contrato da API
+      ↓
+Backend
+      ↓
+Base de dados
+      ↓
+Ligação ao frontend
+      ↓
+Testes de autenticação
