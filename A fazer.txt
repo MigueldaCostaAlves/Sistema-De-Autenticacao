@@ -1,0 +1,13 @@
+1. Sistema de autenticação
+
+Cria uma solução reutilizável de identidade:
+
+Login e registo
+Recuperação de conta
+OAuth
+MFA
+Gestão de sessões
+Revogação de tokens
+Gestão de dispositivos
+Painel administrativo
+Podes integrá-lo nos restantes projetos e demonstrar que sabes construir autenticação corretamente, em vez de apenas usar uma biblioteca sem compreender o fluxo.
